@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="326.0" prefWidth="312.0" spacing="30.0" style="-fx-border-color: black; -fx-border-insets: 3; -fx-border-width: 2; -fx-background-color: #E6E6FA;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TempConverter.TemperatureConverterController">
+   <children>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Wprowadź określoną wartość temperatury" textAlignment="CENTER" wrappingWidth="312.536678314209">
+         <font>
+            <Font name="Sylfaen" size="19.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="7.0" />
+         </VBox.margin>
+      </Text>
+      <VBox prefWidth="312.0" style="-fx-border-color: black;">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Stopnie Celsjusza:">
+               <font>
+                  <Font name="Sylfaen" size="14.0" />
+               </font></Text>
+            <HBox prefHeight="17.0" prefWidth="312.0" spacing="50.0">
+               <children>
+                  <TextField fx:id="cTextField" promptText="np. 36,6 °C" />
+                  <Button fx:id="cButton" mnemonicParsing="false" onAction="#onCButtonCLicked" text="Konwertuj!">
+                     <font>
+                        <Font name="Sylfaen" size="12.0" />
+                     </font></Button>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" top="5.0" />
+         </padding>
+      </VBox>
+      <VBox prefWidth="312.0" style="-fx-border-color: black;">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Stopnie Fahrenheita:">
+               <font>
+                  <Font name="Sylfaen" size="14.0" />
+               </font></Text>
+            <HBox prefHeight="0.0" prefWidth="312.0" spacing="50.0">
+               <children>
+                  <TextField fx:id="fTextField" prefHeight="26.0" prefWidth="149.0" promptText="np. 100 °F" />
+                  <Button fx:id="fButton" mnemonicParsing="false" onAction="#onFButtonClicked" text="Konwertuj!"><font>
+                     <Font name="Sylfaen" size="12.0" />
+                  </font>/></Button>
+                  
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" top="5.0" />
+         </padding>
+      </VBox>
+      <VBox prefWidth="100.0" style="-fx-border-color: black;">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Kelwiny:">
+               <font>
+                  <Font name="Sylfaen" size="14.0" />
+               </font></Text>
+            <HBox prefHeight="0.0" prefWidth="312.0" spacing="50.0">
+               <children>
+                  <TextField fx:id="kTextFIeld" promptText="np. 273 K" />
+                  <Button fx:id="kButton" mnemonicParsing="false" onAction="#onKButtonClicked" text="Konwertuj!">
+                     <font>
+                        <Font name="Sylfaen" size="12.0" />
+                     </font></Button>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" top="5.0" />
+         </padding>
+      </VBox>
+   </children>
+   <opaqueInsets>
+      <Insets top="5.0" />
+   </opaqueInsets>
+   <padding>
+      <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+   </padding>
+</VBox>
